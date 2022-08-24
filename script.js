@@ -1,11 +1,11 @@
 score = 0
 cross = true
 
-audiogo = new Audio('gameOver.mp3')
+audiogo = new Audio('gameover.mp3')
 audio = new Audio('music.mp3')
 
 
-setTimeout(function() {
+setTimeout(() => {
     audio.play()
 }, 1000);
 
