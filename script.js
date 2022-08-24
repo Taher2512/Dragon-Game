@@ -4,9 +4,9 @@ cross = true
 audiogo = new Audio('gameOver.mp3')
 audio = new Audio('music.mp3')
 
-setTimeout(() => {
+
     audio.play()
-}, 1000);
+
 
 document.onkeydown = function(e){
     if(e.keyCode == 38) {
@@ -47,7 +47,7 @@ setInterval(() => {
         obstacle.classList.remove('obstacleAni')
         audiogo.play()
         setTimeout(() => {
-            audiogo.pause()
+            audiogo.play()
             audio.pause()
         }, 1000);
     } else if(offsetX < 145 && cross) {
